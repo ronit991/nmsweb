@@ -1,6 +1,141 @@
 {% extends 'common.html' %}
-
+{% load static %}
 
 {% block maincontent %}
-  <p>maincontent</p>
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+  
+  <div id="topHeaderBG"></div>
+  <div id="homeTopContent">
+    <div id="sharingvision">SHARING YOUR VISION</div>
+    <div id="sharingvisiondescription">
+      <div>We love create experiences that enable people to connect, express themselves and establish meaningful relationships</div>
+      <div class="btnPrimLT" id="startProjBtn">Start a Project</div>
+    </div>
+  </div>
+
+  <div id="homeTopGraphic">
+    <div></div>
+  </div>
+
+  <div id="homeDarkBody">
+    <div id="companyStatsBox">
+      <div class="companyStats">
+        <div class="plusSign" id="projectsPlus">+</div>
+        <div class="stat">900</div>
+        <div class="statLabel">Successful Projects</div>
+      </div>
+      <div class="companyStats">
+        <div class="plusSign" id="clientsPlus">+</div>
+        <div class="stat">600</div>
+        <div class="statLabel">Super Happy Clients</div>
+      </div>
+      <div class="companyStats">
+        <div class="plusSign" id="awardsPlus">+</div>
+        <div class="stat">200</div>
+        <div class="statLabel">Award Winners</div>
+      </div>
+      
+      <div id="companyStatsDescription"  class="text36">Stay connected with us & get your digital marketing strategy in place. We make digital marketing simple.</div>
+    </div> <!-- End of companyStatsBox -->
+
+
+    <div class="homePgSection" id="whatWeDeliverBox">
+      <div class="homeHeadings">WHAT WE DELIVER</div>
+      <div id="whatWeDeliverBanner"> <img src="{% static 'img/WhatWeDeliverBanner.svg' %}"> </div>
+      <div id="whatWeDeliverDescriptionGroup">
+        <div class="text36">Custom digital strategy informed by a powerful appraisal & your business deserves better than a pre-packed strategy</div>
+        <div class="text36">See the progress we're making & what's driving results, anytime, we keep you consistently & transparently informed</div>
+        <div class="text36">Services that dovetail together for your highest ROI, rowing in the same direction as your goals</div>
+      </div>
+    </div> <!-- End of whatWeDeliverBox -->
+
+
+    <div class="homePgSection" id="selectedWorksBox">
+      <div id="selectedWorksBoxCol1">
+        <div id="selectedWorkXL" class="selectedWorks"> </div>
+        <div id="selectedWorkM1" class="selectedWorks"> </div>
+        <div id="selectedWorkM2" class="selectedWorks"> </div>
+      </div>
+
+      <div id="selectedWorksBoxCol2">
+        <div id="selectedWorksText">
+          <div class="homeHeadings">SELECTED WORKS</div>
+          <div class="text36">Get a deeper look at the challenges we overcome daily to create success stories for the brands</div>
+        </div>
+        <div id="selectedWorkL" class="selectedWorks"> </div>
+      </div>
+    </div> <!-- End of selectedWorksBox -->
+
+
+    <div class="homePgSection" id="ourTeamBox">
+      <div id="ourTeamBoxCol1">
+        <div class="teamProfileBox">
+          <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
+          <div>Name Here</div>
+          <div>CEO</div>
+        </div>
+
+        <div class="teamProfileBox">
+          <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
+          <div>Name Here</div>
+          <div>CEO</div>
+        </div>
+      </div>
+
+      <div id="ourTeamBoxCol2">
+        <div class="homeHeadings">OUR TEAM</div>
+        <div class="text36">Our team has more than xx experienced and passionate people at the cutting edge of all things digital marketing, we always give our best for you.</div>
+      </div>
+    </div> <!-- End of ourTeamBox -->
+
+
+    <div class="homePgSection" id="ourClientsBox" >
+      <div id="ourClientsBoxCol1" class="homeHeadings">OUR CLIENTS</div>
+
+      <div id="ourClientsBoxCol2" class="text36">
+        We are encouraged and inspired when our clients share their project results and success stories with us. WE have always noted the outstanding results of our work.
+      </div>
+
+      <div id="ourClientsBoxCol3">
+        <div>620</div>
+      </div>
+
+      <div id="ourClientsLogoGallery">
+        <div><img src="{% static 'img/MSLogo.svg' %}"></div>
+        <div class="clientsLogoSeparator"></div>
+
+        <div><img src="{% static 'img/NikeLogo.svg' %}"></div>
+        <div class="clientsLogoSeparator"></div>
+        
+        <div><img src="{% static 'img/RelianceLogo.svg' %}"></div>
+        <div class="clientsLogoSeparator"></div>
+        
+        <div><img src="{% static 'img/TcsLogo.svg' %}"></div>
+      </div>
+    </div> <!-- End of ourClientsBox -->
+
+    <div class="homePgSection" id="startProjectBannerBox">
+      <div id="startProjectBanner">
+        <div id="startProjectBannerHead">READY TO START<br>A PROJECT ?</div>
+        <div class="btnPrimDT">START NOW</div>
+      </div>
+    </div> <!-- End of startProjectBannerBox -->
+
+    <div class="homePgSection" id="keepInTouchBox">
+      <div class="homeHeadings">KEEP IN TOUCH</div>
+      <div id="keepInTouchContents">
+        <div>
+          <div><img id="nmsLogoSmall" src="{% static 'img/NMSLogoSmall.svg' %}"></div>
+          <div id="nmsAddress"  class="text36">35-C, Vidhan Sabha Road, Opp. Jyoti Nagar Police Stn., Jaipur (Raj.) India 302005</div>
+        </div>
+        <div>
+          <div class="text36">hello@nettxmarketingservices.com</div>
+          <div class="keepInTouchIcons"> <img src="{% static 'img/LinkedinLogo.svg' %}"> </div>
+          <div class="keepInTouchIcons"> <img src="{% static 'img/InstagramLogo.svg' %}"> </div>
+          <div class="keepInTouchIcons"> <img src="{% static 'img/TwitterLogo.svg' %}"> </div>
+          <div class="keepInTouchIcons"> <img src="{% static 'img/FacebookLogo.svg' %}"> </div>
+        </div>
+      </div>
+    </div> <!-- End of keepInTouchBox -->
+  </div> <!-- End of homeDarkBody -->
 {% endblock %}

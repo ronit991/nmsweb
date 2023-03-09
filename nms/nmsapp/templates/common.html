@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +7,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NMS</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
 </head>
 <body>
-    <div>header</div>
+    <div id="topHeader">
+        <div id="topHeaderBox">
+            <div class="thLinks">About</div>
+            <div class="thLinks">Projects</div>
+            <div id="thLogo"> <img src="{% static 'img/nms.svg' %}" alt=""> </div>
+            <div class="thLinks">Services</div>
+            <div class="thLinks">Contact Us</div>
+        </div>
+    </div>
+    
 
 
-    <div>
+    <div id="maincontent">
         {% block maincontent %}
         {% endblock %}
     </div>
