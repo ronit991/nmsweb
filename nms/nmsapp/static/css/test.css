@@ -1,0 +1,30 @@
+
+#gallery{
+    
+    width: 152px;
+    height: 156px;
+    overflow: hidden;
+    position: relative;
+}
+
+.galleryImgDiv{
+    display: inline-block;
+    position: absolute;
+
+    border: 1px solid blue;
+}
+
+.animSlide{
+    animation: slide 2s infinite alternate;
+    animation-delay: 1s;
+}
+
+@keyframes slide{
+    0%      {bottom: -156px;}
+    100%    {bottom: 0px;}
+}
+
+.galleryImgDiv>img{
+    width: 150px;
+    color: aqua;
+}

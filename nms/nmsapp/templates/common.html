@@ -9,24 +9,24 @@
     <title>NMS</title>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>                            <!-- JQuery Lib v3.6.3 -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800">        <!-- Google Fonts : Inter -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">      <!-- Google Fonts : Material Icons -->
 
     <link rel="stylesheet" href="{% static 'css/common.css' %}">
 </head>
 <body>
     <div id="topHeader">
         <div id="topHeaderBox">
-            <div class="thLinks">About</div>
-            <div class="thLinks">Projects</div>
-            <div id="thLogo"> <img src="{% static 'img/nms.svg' %}" alt=""> </div>
-            <div class="thLinks">Services</div>
-            <div class="thLinks">Contact Us</div>
+            <div class="thLinks"><a href="/about/">About</a></div>
+            <div class="thLinks"><a href="/#selectedWorksBox">Projects</a></div>
+            <div id="thLogo" onclick="location.href = '/'"> <img src="{% static 'img/nms.svg' %}" alt=""> </div>
+            <div class="thLinks"><a href="/#whatWeDeliverBox">Services</a></div>
+            <div class="thLinks"><a href="#keepInTouchBox">Contact Us</a></div>
         </div>
-    </div>
+    </div> <!-- End of topHeader -->
     
 
 
@@ -34,6 +34,24 @@
         {% block maincontent %}
         {% endblock %}
     </div>
+
+
+    <div class="section" id="keepInTouchBox">
+        <div class="headings96">KEEP IN TOUCH</div>
+        <div id="keepInTouchContents">
+            <div>
+                <div><img id="nmsLogoSmall" src="{% static 'img/NMSLogoSmall.svg' %}"></div>
+                <div id="nmsAddress"  class="text36">35-C, Vidhan Sabha Road, Opp. Jyoti Nagar Police Stn., Jaipur (Raj.) India 302005</div>
+            </div>
+            <div>
+                <div class="text36">hello@nettxmarketingservices.com</div>
+                <div class="keepInTouchIcons"> <img src="{% static 'img/LinkedinLogo.svg' %}"> </div>
+                <div class="keepInTouchIcons"> <img src="{% static 'img/InstagramLogo.svg' %}"> </div>
+                <div class="keepInTouchIcons"> <img src="{% static 'img/TwitterLogo.svg' %}"> </div>
+                <div class="keepInTouchIcons"> <img src="{% static 'img/FacebookLogo.svg' %}"> </div>
+            </div>
+        </div>
+    </div> <!-- End of keepInTouchBox -->
     
 
 </body>

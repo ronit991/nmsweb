@@ -150,6 +150,9 @@
     top: 0vw;
     right: 5vw;
 }
+#whatWeDeliverBanner>img{
+    height: 10vw;
+}
 
 #whatWeDeliverBox>.homeHeadings{
     width: 26vw;
@@ -258,6 +261,7 @@
     text-align: right;
 
     background-image: url('/static/img/ClientCountBG.svg');
+    background-size: 100%;
 }
 
 
@@ -291,6 +295,7 @@
 
     background-color: var(--Blue);
     background-image: url('/static/img/StartProjBanner.svg');
+    background-size: 100%;
 }
 
 #startProjectBannerHead{
@@ -307,34 +312,3 @@
 }
 
 
-#keepInTouchBox{
-    padding-bottom: 5vw;
-}
-#keepInTouchBox>.homeHeadings{
-    width: 20vw;
-}
-
-#keepInTouchContents{
-    display: flex;
-    flex-direction: row;
-}
-#keepInTouchContents>div{
-    flex-basis: 50vw;
-}
-#nmsLogoSmall{
-    width: 24vw;
-}
-#nmsAddress{
-    width: 33vw;
-    margin-top: 1.875vw;
-}
-
-.keepInTouchIcons{
-    display: inline-block;
-    margin-top: 1.875vw;
-    margin-right: 2.5vw;
-}
-.keepInTouchIcons>img{
-    height: 2.5vw;
-    width: 2.5vw;
-}

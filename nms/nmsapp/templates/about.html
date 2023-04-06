@@ -1,0 +1,87 @@
+{% extends 'common.html' %}
+{% load static %}
+
+{% block maincontent %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+  
+<div id="topHeaderBG"></div>
+<div id="aboutTopContent">
+  <div id="headBrandBuilding">12 Years Of Successful Brand Building</div>
+  <div id="headBrandBuildingdescription">
+    <div>We are the leaders of hybrid marketing, social media strategies, content and paid marketing.</div>
+  </div>
+</div>
+
+<div id="aboutTopGraphic">
+  <div></div>
+</div>
+
+<div id="darkBody">
+    <div id="knowledgeBox">
+        <div id="knowledgeBoxDescription" class="text36">
+            With over 12 years of industry knowledge, our legacy is built on a strong ethos of meaningful & impactful projects. We add the missing layers of creative flair to campaigns that connect SMEs and game changing brands with communities. <br><br>
+
+            As a collective, we mix up our passion for culture and creativity with a nerdy enthusiasm for growth marketing. <br><br>
+            
+            Our core team are young but experienced digital natives, from diverse backgrounds and we source creatives from the communities our clients want to speak with to co-create content.
+        </div>
+
+        <div id="knowledgeBoxHeading" class="headings96">
+            Knowledge<br>
+            Experience<br>
+            Culture
+        </div>
+    </div>
+
+    <div id="numberGameBox">
+        <div>
+            <div id="numberGameBoxHeading" class="headings96">The Number<br>Game</div>
+            <div id="numberGameBoxDescription" class="text36">
+                All praises and glorification is pretentious<br>until you have the figures. <br><br>
+                Well, we let our numbers speak for<br>ourselves.
+            </div>
+        </div>
+        <div id="companyStatsBox">
+            <div class="companyStats">
+                <div class="plusSign" id="projectsPlus">+</div>
+                <div class="stat">900</div>
+                <div class="statLabel">Successful Projects</div>
+            </div>
+            <div class="companyStats">
+                <div class="plusSign" id="clientsPlus">+</div>
+                <div class="stat">600</div>
+                <div class="statLabel">Super Happy Clients</div>
+            </div>
+            <div class="companyStats">
+                <div class="plusSign" id="awardsPlus">+</div>
+                <div class="stat">200</div>
+                <div class="statLabel">Award Winners</div>
+            </div>
+        </div> <!-- End of companyStatsBox -->
+    </div>
+
+    <div id="ourTeamBox">
+        <div id="ourTeamBoxCol1">
+            <div class="teamProfileBox">
+                <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
+                <div>Name Here</div>
+                <div>CEO</div>
+            </div>
+    
+            <div class="teamProfileBox">
+                <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
+                <div>Name Here</div>
+                <div>CEO</div>
+            </div>
+        </div>
+
+        <div id="ourTeamBoxCol2">
+            <div class="headings96">Our Team</div>
+            <div class="text36">Our team has more than xx experienced and passionate people at the cutting edge of all things digital marketing, we always give our best for you.</div>
+          </div>
+    </div> <!-- End of ourTeamBox -->
+
+
+  
+</div> <!-- End of darkBody -->
+{% endblock %}
