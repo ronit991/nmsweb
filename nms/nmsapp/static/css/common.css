@@ -6,3 +6,131 @@
     --Orange : #F23A19;
     --Yellow : #FF940E;
 }
+
+div{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter';
+    margin: 0px;
+    padding-top: 12.6vw;
+
+    color: var(--Black);
+    background-color: var(--Black);
+
+    -ms-overflow-style: none;   /* Hide scrollbar for IE and Edge   */
+    scrollbar-width: none;      /* Hide scrollbar for Firefox       */
+}
+
+body::-webkit-scrollbar {
+display: none;  /* Hide scrollbar for Chrome, Safari and Opera      */
+}
+
+.headings96{
+    font-size: 5vw;
+}
+
+
+#topHeader{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+
+
+#topHeaderBox{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 6.88vw;
+    justify-content: center;
+    align-items: center;
+
+    height: 7.1875vw;
+    width: 90vw;
+    margin: 0vw 5vw 0vw 5vw;
+
+    font-size: 1.875vw;
+    border-bottom: 1px solid var(--Black);
+}
+
+#topHeaderBox>div{
+    display: inline-block;
+}
+
+#thLogo>img{
+    width: 32vw;
+    cursor: pointer;
+}
+
+.thLinks>a{
+    text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active{
+    color: inherit;
+}
+
+
+.btnPrimLT{
+    background-color: var(--Black);
+    color: var(--LGrey);
+}
+
+.btnPrimDT{
+    background-color: var(--LGrey);
+    color: var(--Black);
+}
+
+
+#maincontent{
+    z-index: 1;
+}
+
+
+.text36{
+    font-size: 1.875vw;
+}
+
+
+
+#keepInTouchBox{
+    margin-top: 8vw;
+    padding-bottom: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    color: var(--White);
+    background-color: var(--Black);
+}
+#keepInTouchBox>.headings96{
+    margin-bottom: 1.875vw;
+    width: 20vw;
+}
+
+#keepInTouchContents{
+    display: flex;
+    flex-direction: row;
+}
+#keepInTouchContents>div{
+    flex-basis: 50vw;
+}
+#nmsLogoSmall{
+    width: 24vw;
+}
+#nmsAddress{
+    width: 33vw;
+    margin-top: 1.875vw;
+}
+
+.keepInTouchIcons{
+    display: inline-block;
+    margin-top: 1.875vw;
+    margin-right: 2.5vw;
+}
+.keepInTouchIcons>img{
+    height: 2.5vw;
+    width: 2.5vw;
+}

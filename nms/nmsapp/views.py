@@ -8,3 +8,17 @@ def home(request):
     template = loader.get_template( 'home.html' )
 
     return HttpResponse( template.render(context, request) )
+
+
+def about(request):
+    context = {}
+    template = loader.get_template( 'about.html' )
+
+    return HttpResponse( template.render(context, request) )
+
+
+def test(request):
+    context = {}
+    template = loader.get_template( 'test.html' )
+
+    return HttpResponse( template.render(context, request) )
