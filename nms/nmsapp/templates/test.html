@@ -9,17 +9,28 @@
     <title>Test</title>
 
     <link rel="stylesheet" href="{% static 'css/test.css' %}">
+    <script src="{% static 'js/test.js' %}" defer></script>
 </head>
 <body>
 
     <h1>test page</h1>
 
-    <div id="gallery">
-        <div class="galleryImgDiv">1</div>
-        <div class="galleryImgDiv">2</div>
-        <div class="galleryImgDiv">3</div>
-        <div class="galleryImgDiv">4</div>
-        <div class="galleryImgDiv animSlide"><img src="{% static 'img/MSLogo.svg' %}" alt=""></div>
+    <!-- <div id="gallery">
+        <div class="galleryImgDiv animSlide animDelay2"><img src="{% static 'img/RelianceLogo.svg' %}" alt=""></div>
+        <div class="galleryImgDiv animSlide animDelay4"><img src="{% static 'img/NikeLogo.svg' %}" alt=""></div>
+        <div class="galleryImgDiv animSlide animDelay6"><img src="{% static 'img/TcsLogo.svg' %}" alt=""></div>
+        <div class="galleryImgDiv animSlide animDelay8"><img src="{% static 'img/MSLogo.svg' %}" alt=""></div>
+    </div> -->
+
+    <div id = "newGallery">
+        <div id = "scrollLeft"  onclick="Left()">&lt;</div>
+        <div id = "scrollRight" onclick="scrollRight()">&gt;</div>
+        <div id = "galleryItems">
+            <div class="galleryContent">1</div>
+            <div class="galleryContent">2</div>
+            <div class="galleryContent">3</div>
+            <div class="galleryContent">4</div>
+        </div>
     </div>
     
 </body>
