@@ -3,13 +3,14 @@
 
 {% block maincontent %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
+<!-- <script src="{% static 'js/home.js' %}"></script> -->
   
   <div id="topHeaderBG"></div>
   <div id="homeTopContent">
     <div id="sharingvision">SHARING YOUR VISION</div>
     <div id="sharingvisiondescription">
       <div>We love create experiences that enable people to connect, express themselves and establish meaningful relationships</div>
-      <div class="btnPrimLT" id="startProjBtn">Start a Project</div>
+      <div class="btnPrimLT" id="startProjBtn" onclick="showStartProjForm()">Start a Project</div>
     </div>
   </div>
 
@@ -21,12 +22,12 @@
     <div id="companyStatsBox">
       <div class="companyStats">
         <div class="plusSign" id="projectsPlus">+</div>
-        <div class="stat">900</div>
+        <div class="stat">3500</div>
         <div class="statLabel">Successful Projects</div>
       </div>
       <div class="companyStats">
         <div class="plusSign" id="clientsPlus">+</div>
-        <div class="stat">600</div>
+        <div class="stat">3000</div>
         <div class="statLabel">Super Happy Clients</div>
       </div>
       <div class="companyStats">
@@ -52,9 +53,9 @@
 
     <div class="homePgSection" id="selectedWorksBox">
       <div id="selectedWorksBoxCol1">
-        <div id="selectedWorkXL" class="selectedWorks"> </div>
-        <div id="selectedWorkM1" class="selectedWorks"> </div>
-        <div id="selectedWorkM2" class="selectedWorks"> </div>
+        <div id="selectedWorkXL" class="selectedWorks"> <img src="{% static 'img/projXL.jpg' %}" alt=""> <div class="projTitle">Ahren Arts</div> </div>
+        <div id="selectedWorkM1" class="selectedWorks"> <img src="{% static 'img/projM1.png' %}" alt=""> <div class="projTitle">Temple Games</div> </div>
+        <div id="selectedWorkM2" class="selectedWorks"> <img src="{% static 'img/projM2.jpg' %}" alt=""> <div class="projTitle">Bliss</div> </div>
       </div>
 
       <div id="selectedWorksBoxCol2">
@@ -62,31 +63,9 @@
           <div class="homeHeadings">SELECTED WORKS</div>
           <div class="text36">Get a deeper look at the challenges we overcome daily to create success stories for the brands</div>
         </div>
-        <div id="selectedWorkL" class="selectedWorks"> </div>
+        <div id="selectedWorkL" class="selectedWorks"> <img src="{% static 'img/projL.jpg' %}" alt=""> <div class="projTitle">X.2 Networks</div> </div>
       </div>
     </div> <!-- End of selectedWorksBox -->
-
-
-    <div class="homePgSection" id="ourTeamBox">
-      <div id="ourTeamBoxCol1">
-        <div class="teamProfileBox">
-          <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
-          <div>Name Here</div>
-          <div>CEO</div>
-        </div>
-
-        <div class="teamProfileBox">
-          <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
-          <div>Name Here</div>
-          <div>CEO</div>
-        </div>
-      </div>
-
-      <div id="ourTeamBoxCol2">
-        <div class="homeHeadings">OUR TEAM</div>
-        <div class="text36">Our team has more than xx experienced and passionate people at the cutting edge of all things digital marketing, we always give our best for you.</div>
-      </div>
-    </div> <!-- End of ourTeamBox -->
 
 
     <div class="homePgSection" id="ourClientsBox" >
@@ -97,7 +76,7 @@
       </div>
 
       <div id="ourClientsBoxCol3">
-        <div>620</div>
+        <div>3500</div>
       </div>
 
       <div id="ourClientsLogoGallery">
@@ -114,12 +93,55 @@
       </div>
     </div> <!-- End of ourClientsBox -->
 
+
     <div class="homePgSection" id="startProjectBannerBox">
       <div id="startProjectBanner">
         <div id="startProjectBannerHead">READY TO START<br>A PROJECT ?</div>
-        <div class="btnPrimDT">START NOW</div>
+        <div class="btnPrimDT" onclick="showStartProjForm()">START NOW</div>
       </div>
     </div> <!-- End of startProjectBannerBox -->
 
   </div> <!-- End of homeDarkBody -->
+
+
+  <form onsubmit="return submitStartProjForm()" id="startProjectForm" class="forms twoColumn">
+    <div class="text36">Start a Project</div>
+
+    <div class="columnLayout">
+      <div class="x2FormColumn">
+        <div>
+          <div>Your Name</div>
+          <input type="text" name="clientName" id="clientName">
+        </div>
+        <div>
+          <div>Email</div>
+          <input type="text" name="clientEmail" id="clientEmail">
+        </div>
+      </div> <!-- End of x2FormColumn -->
+  
+      <div class="x2FormColumn">
+        <div>
+          <div>Company</div>
+          <input type="text" name="clientCompany" id="clientCompany">
+        </div>
+        <div>
+          <div>Phone</div>
+          <input type="text" name="clientPhoneNo" id="clientPhoneNo">
+        </div>
+      </div> <!-- End of x2FormColumn -->
+    </div> <!-- End of columnLayout -->
+
+    <div>
+      <div>Message</div>
+      <textarea name="clientMessage" id="clientProjectDescription"></textarea>
+    </div>
+
+    <div id="startProjFormButtonGroup">
+      <button type="button" class="btnSecondaryLT startProjFormBtn" onclick="hideStartProjForm()">Cancel</button>
+      <button type="submit" class="btnPrimLT startProjFormBtn" id="startProjFormSumbitBtn">Submit</button>
+    </div>
+  </form> <!-- End of startProjectForm -->
+
+
+  <script src="{% static 'js/home.js' %}" defer></script>
 {% endblock %}

@@ -9,13 +9,16 @@
     <title>NMS</title>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>                            <!-- JQuery Lib v3.6.3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>                            <!-- JQuery Lib v3.7.0 -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800">        <!-- Google Fonts : Inter -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">      <!-- Google Fonts : Material Icons -->
 
     <link rel="stylesheet" href="{% static 'css/common.css' %}">
+
+    {% block templateSpecificHeadContent %}
+    {% endblock %}
 </head>
 <body>
     <div id="topHeader">
@@ -41,18 +44,25 @@
         <div id="keepInTouchContents">
             <div>
                 <div><img id="nmsLogoSmall" src="{% static 'img/NMSLogoSmall.svg' %}"></div>
-                <div id="nmsAddress"  class="text36">35-C, Vidhan Sabha Road, Opp. Jyoti Nagar Police Stn., Jaipur (Raj.) India 302005</div>
+                <div id="nmsAddress"  class="text24">
+                    USA : 1309 Coffeen Avenue STE 1200 Sheridan, WY 82801<br><br>
+                    UK : 27, Old Gloucester Street, London - WC1N 3AX<br><br>
+                    UAE : Suite 1805, Burlington Tower, Business Bay, Dubai<br><br>
+                    India : D-251, Hanuman Nagar D Vaishali nagar, Jaipur (Raj.) 302021<br><br>
+                    Phillipines : 134 CLB Building Fe. St. Balayan, Batangas
+                </div>
             </div>
             <div>
-                <div class="text36">hello@nettxmarketingservices.com</div>
-                <div class="keepInTouchIcons"> <img src="{% static 'img/LinkedinLogo.svg' %}"> </div>
-                <div class="keepInTouchIcons"> <img src="{% static 'img/InstagramLogo.svg' %}"> </div>
-                <div class="keepInTouchIcons"> <img src="{% static 'img/TwitterLogo.svg' %}"> </div>
-                <div class="keepInTouchIcons"> <img src="{% static 'img/FacebookLogo.svg' %}"> </div>
+                <div class="text24">info@nettxmarketing.com</div>
+                <div class="keepInTouchIcons"> <a href="https://www.linkedin.com/company/nettx-marketing-llc/" target="_blank"><img src="{% static 'img/LinkedinLogo.svg' %}"></a> </div>
+                <div class="keepInTouchIcons"> <a href="https://www.facebook.com/nettx.ph/" target="_blank"><img src="{% static 'img/FacebookLogo.svg' %}"></a> </div>
+                <div class="keepInTouchIcons"> <a href="https://www.facebook.com/nettx.ph/" target="_blank"><img src="{% static 'img/InstagramLogo.svg' %}"></a> </div>
+                <div class="keepInTouchIcons"> <a href="https://www.facebook.com/nettx.ph/" target="_blank"><img src="{% static 'img/TwitterLogo.svg' %}"></a> </div>
             </div>
         </div>
     </div> <!-- End of keepInTouchBox -->
-    
+
+    <div id="overlayMask"></div>
 
 </body>
 </html>

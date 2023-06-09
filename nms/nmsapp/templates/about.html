@@ -3,12 +3,14 @@
 
 {% block maincontent %}
 <link rel="stylesheet" href="{% static 'css/about.css' %}">
+<script src="{% static 'js/about.js' %}" defer></script>
   
 <div id="topHeaderBG"></div>
 <div id="aboutTopContent">
   <div id="headBrandBuilding">12 Years Of Successful Brand Building</div>
   <div id="headBrandBuildingdescription">
     <div>We are the leaders of hybrid marketing, social media strategies, content and paid marketing.</div>
+    <img src="{% static 'img/victory.png' %}" alt="">
   </div>
 </div>
 
@@ -37,19 +39,18 @@
         <div>
             <div id="numberGameBoxHeading" class="headings96">The Number<br>Game</div>
             <div id="numberGameBoxDescription" class="text36">
-                All praises and glorification is pretentious<br>until you have the figures. <br><br>
-                Well, we let our numbers speak for<br>ourselves.
+                All praises and glorification can be pretentious,<br>but our numbers speak for ourselves.
             </div>
         </div>
         <div id="companyStatsBox">
             <div class="companyStats">
                 <div class="plusSign" id="projectsPlus">+</div>
-                <div class="stat">900</div>
+                <div class="stat">3500</div>
                 <div class="statLabel">Successful Projects</div>
             </div>
             <div class="companyStats">
                 <div class="plusSign" id="clientsPlus">+</div>
-                <div class="stat">600</div>
+                <div class="stat">3000</div>
                 <div class="statLabel">Super Happy Clients</div>
             </div>
             <div class="companyStats">
@@ -62,16 +63,47 @@
 
     <div id="ourTeamBox">
         <div id="ourTeamBoxCol1">
-            <div class="teamProfileBox">
-                <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
-                <div>Name Here</div>
-                <div>CEO</div>
+            <div id = "teamScrollLeft"  onclick="teamScrollLeft()">
+                <span class="material-icons-outlined scrollIcons">arrow_back_ios</span></div>
+            <div id = "teamScrollRight" onclick="teamScrollRight()">
+                <span class="material-icons-outlined scrollIcons">arrow_forward_ios</span>
             </div>
+            <div id="teamProfileContainer">
+                <div class="teamProfileBox">
+                    <div>
+                        <img src="{% static 'img/TeamProfile1.svg' %}" class="profileBG">
+                        <img src="{% static 'img/profileTushar.png' %}" class="profileDP">
+                    </div>
+                    <div>Tushar Raj</div>
+                    <div>Director</div>
+                </div>
+        
+                <div class="teamProfileBox">
+                    <div>
+                        <img src="{% static 'img/TeamProfile1.svg' %}" class="profileBG">
+                        <img src="{% static 'img/profileNikhil.png' %}" class="profileDP">
+                    </div>
+                    <div>Nikhil Ojha</div>
+                    <div>COO</div>
+                </div>
+
+                <div class="teamProfileBox">
+                    <div>
+                        <img src="{% static 'img/TeamProfile1.svg' %}" class="profileBG">
+                        <img src="{% static 'img/profileKhushanshu.png' %}" class="profileDP">
+                    </div>
+                    <div>Khushanshu Bhatnagar</div>
+                    <div>CEO & Founder</div>
+                </div>
     
-            <div class="teamProfileBox">
-                <div> <img src="{% static 'img/TeamProfile1.svg' %}"> </div>
-                <div>Name Here</div>
-                <div>CEO</div>
+                <div class="teamProfileBox">
+                    <div>
+                        <img src="{% static 'img/TeamProfile1.svg' %}" class="profileBG">
+                        <img src="{% static 'img/profileTarunima.png' %}" class="profileDP">
+                    </div>
+                    <div>Tarunima Paul</div>
+                    <div>MD - India</div>
+                </div>
             </div>
         </div>
 
