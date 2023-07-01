@@ -28,7 +28,6 @@
 #startProjBtn{
     border-radius: 1.5625vw;
     height: 3.125vw;
-    width: fit-content;
     padding: 0.4166vw 1vw 0.4166vw 1vw;
 }
 
@@ -61,7 +60,8 @@
     margin-top: 6vw;
     border-radius: 3.75vw;
 
-    background-image: url('/static/img/TopBanner.svg');
+    background-image: url('/static/img/TopBanner2.svg');
+    background-size: cover;
 }
 
 #homeDarkBody{
@@ -94,7 +94,6 @@
 .companyStats>.plusSign{
     position: absolute;
     top: -2.1875vw;
-    right: 1.875vw;
 
     font-size: 5vw;
     font-weight: 700;
@@ -102,12 +101,15 @@
 
 #projectsPlus{
     color: var(--Orange);
+    right: -1vw;
 }
 #clientsPlus{
     color: var(--Blue);
+    right: -1vw;
 }
 #awardsPlus{
     color: var(--Yellow);
+    right: 1.875vw;
 }
 
 
@@ -150,6 +152,9 @@
     top: 0vw;
     right: 5vw;
 }
+#whatWeDeliverBanner>img{
+    height: 10vw;
+}
 
 #whatWeDeliverBox>.homeHeadings{
     width: 26vw;
@@ -157,13 +162,12 @@
 
 #whatWeDeliverDescriptionGroup{
     display: flex;
-    flex-direction: row;
-    gap: 6vw;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 #whatWeDeliverDescriptionGroup>div{
     flex-basis: 28vw;
-    text-align: justify;
 }
 
 
@@ -179,19 +183,19 @@
     flex-basis: 26vw;
 }
 #selectedWorkXL{
-    background-color: var(--Blue);
+    /* background-color: var(--Blue); */
     height: 40vw;
 }
 #selectedWorkL{
-    background-color: var(--Orange);
+    /* background-color: var(--Orange); */
     height: 45.21vw;
     margin-top: 3.33vw;
 }
 #selectedWorkM1{
-    background-color: var(--LGrey);
+    /* background-color: var(--LGrey); */
 }
 #selectedWorkM2{
-    background-color: var(--Yellow);
+    /* background-color: var(--Yellow); */
     margin-left: 2vw;
 }
 #selectedWorkM1,#selectedWorkM2{
@@ -199,6 +203,23 @@
     width: 28.6vw;
     height: 28.125vw;
     margin-top: 3.33vw;
+}
+
+.selectedWorks{
+    position: relative;
+}
+.selectedWorks>img{
+    width: 100%;
+    border-radius: inherit;
+}
+
+.projTitle{
+    position: absolute;
+    left: 2.5vw;
+    bottom: 1.25vw;
+    max-width: 25vw;
+    font-size: 3.75vw;
+    text-shadow: 4px 4px 8px rgba(50, 50, 50, 0.5);
 }
 
 #selectedWorkXL,#selectedWorkL,#selectedWorkM1,#selectedWorkM2{
@@ -253,11 +274,12 @@
 #ourClientsBoxCol3>div{
     height: 7.5vw;
     font-size: 6.67vw;
-    font-weight: 700;
-    padding-right: 2.5vw;
+    font-weight: 600;
+    padding-right: 1.25vw;
     text-align: right;
 
     background-image: url('/static/img/ClientCountBG.svg');
+    background-size: 100%;
 }
 
 
@@ -291,6 +313,7 @@
 
     background-color: var(--Blue);
     background-image: url('/static/img/StartProjBanner.svg');
+    background-size: 100%;
 }
 
 #startProjectBannerHead{
@@ -307,34 +330,3 @@
 }
 
 
-#keepInTouchBox{
-    padding-bottom: 5vw;
-}
-#keepInTouchBox>.homeHeadings{
-    width: 20vw;
-}
-
-#keepInTouchContents{
-    display: flex;
-    flex-direction: row;
-}
-#keepInTouchContents>div{
-    flex-basis: 50vw;
-}
-#nmsLogoSmall{
-    width: 24vw;
-}
-#nmsAddress{
-    width: 33vw;
-    margin-top: 1.875vw;
-}
-
-.keepInTouchIcons{
-    display: inline-block;
-    margin-top: 1.875vw;
-    margin-right: 2.5vw;
-}
-.keepInTouchIcons>img{
-    height: 2.5vw;
-    width: 2.5vw;
-}
