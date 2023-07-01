@@ -124,6 +124,9 @@ a, a:visited, a:hover, a:active{
     font-size: 1.25vw;
 }
 
+.text16{
+    font-size: 0.833vw;
+}
 
 #keepInTouchBox{
     margin-top: 8vw;
